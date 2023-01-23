@@ -46,6 +46,7 @@ ggplot(data = data_long,
   scale_fill_viridis_d() + 
   guides(fill = guide_legend(nrow = 2))
 ggsave("absolute.png",height = 7, width = 10)
+ggsave("absolute.pdf",height = 7, width = 10)
 
 ggplot(data = data_long,
        mapping = aes(x = Year,
@@ -63,3 +64,4 @@ ggplot(data = data_long,
   scale_color_viridis_d() + 
   guides(color = guide_legend(nrow = 2))
 ggsave("percentage.png",height = 7, width = 10)
+ggsave("percentage.pdf",height = 7, width = 10)
